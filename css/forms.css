@@ -1,0 +1,76 @@
+body {
+    margin: 0% auto;
+    padding: 10px auto;
+    background-color: #EDFBEB;
+}
+header {
+    padding: 10px;
+    height: 60px;
+    background-color: #9FBA5E;
+    overflow: hidden;
+    align-content: center;
+}
+
+.pgtitle {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-left: -10%;
+}
+
+.background-pic {
+    height: 650px;
+    width: auto;
+    /*margin-top: 25%;*/
+}
+
+.form-control{
+    width: 48%;
+    display: block;
+    float: left;
+    font-size: x-small;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.signinbtn {
+    display: inline;
+    padding-left: 2px;
+    margin-top: -2px;
+}
+
+.inspiration {
+    width: 40%;
+    height: 100%;
+    /*margin-top: -10%;*/
+    /*margin-left: 10%;*/
+    /*float: left;*/
+}
+
+.register {
+    margin-top: 85px;
+}
+
+.login {
+    margin-top: 125px;
+}
+
+.links {
+    color: #30A54A;
+    text-decoration: none;
+}
+
+.links:hover {
+     color: #9FB963;
+     text-decoration: none;
+}
+
+.form-text-info {
+    color: #30A54A;
+}
+
+.form-text-info:hover {
+    color: #9FB963;
+}
+

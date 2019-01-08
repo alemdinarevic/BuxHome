@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: #EDFBEB;
+}
+
+header {
+    padding: 10px;
+    height: 60px;
+    background-color: #9FBA5E;
+    overflow: hidden;
+    align-content: center;
+}
+
+.pgtitle {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    float: right;
+    height: auto;
+}
+
+.nav-bar li {
+    padding: 5px 12px 0px 0px;
+    display: inline-block;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar a:hover{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+
+.search {
+    width: 80%;
+    height: 41px;
+}
+
+
+
+.navbar-main {
+    position: relative;
+}
+
+/*.container {*/
+    /*width: 80%;*/
+    /*height: ;*/
+    /*margin: 0 auto;*/
+    /*background-color: blue;*/
+/*}*/
+
+.book-image {
+     width: 200px;
+     height: auto;
+     float: right;
+ }
+
+
+.row-book {
+    padding: 20px;
+    width: 100%;
+    margin: 30px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.info {
+    float: left;
+    display: inline-block;
+    width: 70%;
+}
+
+.image {
+    float: right;
+    display: inline-block;
+    width: 30%;
+}
+
+.row-book:hover {
+    background-color: #9FBA5E;
+    color: white;
+}
