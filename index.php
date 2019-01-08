@@ -21,56 +21,8 @@
             <p> <i> <?php echo "Welcome " . $_SESSION['email']; ?></i></p>
             <?php $_SESSION['message'] = '' ?>
 
+        <?php include 'fetch_books.php';?>
 
-        <div class="row">
-            <div class="row-book">
-                <div class="info">
-                    <h1>Algorithms and data structures,<br>Thomas H. Cormen</h1>
-                    <p>This is the most popular book for developing
-                        and designing great algorithms.</p>
-                    <!--<p font-style="italic">Uploaded by: username. <br>17:09pm</p>-->
-                </div>
-                <div class="image">
-                    <image class="book-image" src="images/book1.png"></image>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="row-book">
-                <div class="info">
-                    <h1>Name, Author</h1>
-                    <p>Description</p>
-                </div>
-                <div class="image">
-                    <image class="book-image" src="images/book1.png"></image>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="row-book">
-                <div class="info">
-                    <h1>Name, Author</h1>
-                    <p>Description</p>
-                </div>
-                <div class="image">
-                    <image class="book-image" src="images/book1.png"></image>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="row-book">
-                <div class="info">
-                    <h1>Name, Author</h1>
-                    <p>Description</p>
-                </div>
-                <div class="image">
-                    <image class="book-image" src="images/book1.png"></image>
-                </div>
-            </div>
-        </div>
     </div>
     <?php else:  header("location: login.php");?>
     <?php endif; ?>
