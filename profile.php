@@ -14,6 +14,7 @@
 
         <div class="profile-info">
             <img class="profile-pic" src="images/pp002.jpg">
+            <p class="profile-description">hiroko.nagoya</p>
         </div>
 
         <div class="profile-posts">
