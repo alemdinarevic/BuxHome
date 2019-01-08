@@ -1,10 +1,54 @@
+.body {
+    margin: 0px;
+}
+
+
 .profile-info {
+    width: 10%;
     margin: 20px 0px 0px 20px;
+    height: 100%;
+    float: left;
+}
+
+.profile-posts {
+    margin: 10px 40px 40px -20px;
+    float: right;
+    width: 75%;
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 5px solid #9FB963;
+}
+
+.row-book {
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    margin: 30px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.info {
+    float: left;
+    display: inline-block;
+    width: 70%;
+}
+
+.book-image {
+    float: right;
+    display: inline-block;
+    width: 30%;
+
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.row-book:hover {
+    background-color: #9FBA5E;
+    color: white;
 }
