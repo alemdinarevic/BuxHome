@@ -24,6 +24,7 @@
             <ul class="nav-bar">
                 <li><a href="index.php">BookFeed</a></li>
                 <li><a href="profile.php">Profile</a></li>
+                <li><a href="add.php">AddBook</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>

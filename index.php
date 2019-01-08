@@ -16,10 +16,10 @@
 
     <div class="container">
 
-        <?php if(isset($_SESSION['email'])): ?>
-           <p> <i> <?php echo $_SESSION['message']; ?></i></p>
-            <p> <i> <?php echo "Welcome " . $_SESSION['email']; ?></i></p>
-            <?php $_SESSION['message'] = '' ?>
+    <?php if(isset($_SESSION['email'])): ?>
+       <p> <i> <?php echo $_SESSION['message']; ?></i></p>
+        <p> <i> <?php echo "Welcome " . $_SESSION['email']; ?></i></p>
+        <?php $_SESSION['message'] = '' ?>
 
         <?php include 'fetch_books.php';?>
 
