@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    width: 100%;
     padding: 10px;
     height: 60px;
     background-color: #9FBA5E;
@@ -48,24 +49,11 @@ header {
     height: 41px;
 }
 
-
-
 .navbar-main {
     position: relative;
 }
 
-/*.container {*/
-    /*width: 80%;*/
-    /*height: ;*/
-    /*margin: 0 auto;*/
-    /*background-color: blue;*/
-/*}*/
 
-.book-image {
-     width: 200px;
-     height: auto;
-     float: right;
- }
 
 
 .row-book {
@@ -82,10 +70,14 @@ header {
     width: 70%;
 }
 
-.image {
+.book-image {
     float: right;
     display: inline-block;
     width: 30%;
+
+    width: 200px;
+    height: auto;
+    float: right;
 }
 
 .row-book:hover {
