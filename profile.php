@@ -8,11 +8,13 @@
 </head>
 <body>
 
+<?php include 'navbar.php';?>
 
+<div class="profile row">
 
-
-<div class="profile">
-    <img class="profile-pic" src="images/pp001.jpg">
+    <div class="profile-info col-md-3">
+        <img class="profile-pic" src="images/pp001.jpg">
+    </div>
 </div>
 
 </body>

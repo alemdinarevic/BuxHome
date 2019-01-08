@@ -12,25 +12,7 @@
 </head>
 <body>
 
-    <header class="row">
-        <div class="col-md-4">
-            <form class="searchbar" action="/action_page.php">
-                <input class="search form-control" type="text" placeholder="Search.." name="search">
-            </form>
-        </div>
-
-        <div class="col-md-4">
-            <h3 class="pgtitle">BuxHome</h3>
-        </div>
-
-        <div class="col-md-4 navbar-main">
-            <ul class="nav-bar">
-                <li><a href="#">BookFeed</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="logout.php">Logout</a></li>
-            </ul>
-        </div>
-    </header>
+<?php include 'navbar.php';?>
 
     <div class="container">
 
