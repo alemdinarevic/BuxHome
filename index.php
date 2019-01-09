@@ -11,24 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+    <?php if(isset($_SESSION['message'])): ?>
+        <div class="alert alert-success" role="alert">
+            <p> <i> <?php echo $_SESSION['message']; ?></i></p>
+            <?php unset($_SESSION['message']); ?>
+        </div>
+    <?php endif;?>
 
-<?php include 'navbar.php';?>
+    <?php include 'templates/navbar.php';?>
 
     <div class="container">
-
     <?php if(isset($_SESSION['email'])): ?>
-       <p> <i> <?php echo $_SESSION['message']; ?></i></p>
-        <p> <i> <?php echo "Welcome " . $_SESSION['email']; ?></i></p>
-        <?php $_SESSION['message'] = '' ?>
-
-        <?php include 'fetch_books.php';?>
-
+        <?php include 'functions/fetch_books.php';?>
     </div>
     <?php else:  header("location: login.php");?>
     <?php endif; ?>
-
-
-
 
 </body>
 </html>

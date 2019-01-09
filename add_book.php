@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include 'navbar.php';?>
+<?php include 'templates/navbar.php';?>
 
 
 <div class="container">
@@ -30,7 +30,7 @@
                 <label class="form-text-info">Description:</label><br>
                 <input class="form-control" type="text" name="description"><br><br>
                 <label class="form-text-info">Image:</label><br>
-                <input class="form-control" type="text" name="file"><br>
+                <input class="form-control" type="file" name="file"><br>
                 <br>
                 <input class="btn btn-success" type="submit" name="Add"><br><br>
             </form>

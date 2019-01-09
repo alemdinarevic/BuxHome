@@ -1,31 +1,3 @@
-<?php
-session_start();
-$db = mysqli_connect('localhost', 'root', 'root', 'buxhome');
-
-if (isset($_POST['register'])) {
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $email = $_POST['email'];
-
-    $sql = "INSERT into user(username, email, password) VALUES ('$username', '$email', '$password')";
-    $result = mysqli_query($db, $sql);
-    $user = mysqli_fetch_assoc($result);
-
-    if ($user) {
-        if ($user['username'] === $username) {
-            $_SESSION['message'] = "User was not created, maybe duplicate";
-            header("location: index.php");
-        }
-    }else {
-        $_SESSION['message'] = "Succesfully created user";
-        $_SESSION['user'] = $username;
-        header("location: index.php");
-    }
-
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +27,7 @@ if (isset($_POST['register'])) {
         </div>
 
         <div class="register form-group col-md-6">
-            <form action="register.php" method="POST">
+            <form action="functions/register_user.php" method="POST">
                 <?php include('errors.php'); ?>
                 <label class="form-text-info">Username:</label><br>
                 <input class="form-control" type="text" name="username"><br><br>
