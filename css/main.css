@@ -83,3 +83,7 @@ header {
     background-color: #9FBA5E;
     color: white;
 }
+
+.alert, .alert-success {
+    margin-bottom: 0;
+}
