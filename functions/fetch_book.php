@@ -1,7 +1,8 @@
 <?php
 include 'config.php';
+$id = $_GET['id'];
 
-$sql = "SELECT id, title, author, description FROM books";
+$sql = "SELECT * FROM books where id = '$id'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
