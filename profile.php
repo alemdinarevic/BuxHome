@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,14 @@
 </head>
 <body>
 
-<?php include 'navbar.php';?>
+<?php include 'templates/navbar.php';?>
 
     <div class="profile">
 
         <div class="profile-info">
             <img class="profile-pic" src="images/pp002.jpg">
-            <p class="profile-description">hiroko.nagoya</p>
+            <p class="profile-description"> <b> <?php echo $_SESSION['username']; ?>  </b> </p>
+             <p class="profile-description"> <?php echo $_SESSION['email']; ?> </p>
         </div>
 
         <div class="profile-posts">
