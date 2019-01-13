@@ -8,45 +8,29 @@
     <link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 <body>
+ <?php if(isset($_SESSION['message'])): ?>
+        <div class="alert alert-success" role="alert">
+            <p> <i> <?php echo $_SESSION['message']; ?></i></p>
+            <?php unset($_SESSION['message']); ?>
+        </div>
+    <?php endif;?>
 
 <?php include 'templates/navbar.php';?>
 
     <div class="profile">
 
         <div class="profile-info">
-            <img class="profile-pic" src="images/pp002.jpg">
-            <p class="profile-description"> <b> <?php echo $_SESSION['username']; ?>  </b> </p>
-             <p class="profile-description"> <?php echo $_SESSION['email']; ?> </p>
+            <?php include 'functions/fetch_profile_photo.php';?>
+            <br>
+            <p>Change profile picture</p>
+            <form method="POST" action='functions/change_profile_photo.php' enctype="multipart/form-data">
+                <input  type="file" name="profile_pic">
+                <input class= "btn btn-success" type="submit" name="submit">
+            </form>
+
         </div>
-
         <div class="profile-posts">
-
-                <div class="row-book">
-                    <div class="info">
-                        <h1>Algorithms and data structures,<br>Thomas H. Cormen</h1>
-                        <p>This is the most popular book for developing
-                            and designing great algorithms.</p>
-                        <!--<p font-style="italic">Uploaded by: username. <br>17:09pm</p>-->
-                    </div>
-                    <div class="image">
-                        <image class="book-image" src="images/book1.png"></image>
-                    </div>
-                </div>
-
-
-            <div class="row-book">
-                <div class="info">
-                    <h1>1001 nights,<br>Various authors, scholars</h1>
-                    <p>One Thousand and One Nights  is
-                        a collection of Middle Eastern folk tales
-                        compiled in Arabic during the Islamic Golden Age.</p>
-                    <!--<p font-style="italic">Uploaded by: username. <br>17:09pm</p>-->
-                </div>
-                <div class="image">
-                    <image class="book-image" src="images/book002.png"></image>
-                </div>
-            </div>
-
+            <?php include 'functions/book_per_user.php';?>
         </div>
 
     </div>

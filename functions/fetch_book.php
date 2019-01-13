@@ -15,9 +15,12 @@ if ($result->num_rows > 0) {
                     <h1> {$row["title"]},<br> {$row["author"]}</h1>
                     <p>{$row["description"]}</p>
                     <!--<p font-style="italic">Uploaded by: username. <br>17:09pm</p>-->
+                    <br>
+                    <h1>Price: {$row["price"]} $</h1>
+                    <a class="btn btn-success" href='https://www.paypal.com'>Buy here</a>
                 </div>
                 <div class="image">
-                    <a href="book.php?id={$row['id']}"> <image class="book-image" src="images/book1.png"></image></a>
+                    <a href="book.php?id={$row['id']}"> <image class="book-image" src="images/books/{$row['image']}"></image></a>
                 </div>
             </div>
         </div>

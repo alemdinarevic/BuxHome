@@ -21,18 +21,17 @@
 
         <div class="register form-group col-md-6">
             <h1>Add new Book</h1>
-            <form action="add.php" method="POST">
-                <?php include('errors.php'); ?>
+            <form action="functions/add_book.php" method="POST" enctype="multipart/form-data">
                 <label class="form-text-info">Title:</label><br>
                 <input class="form-control" type="text" name="title"><br><br>
                 <label class="form-text-info">Author:</label><br>
-                <input class="form-control" type="text" name="autor"><br><br>
+                <input class="form-control" type="text" name="author"><br><br>
                 <label class="form-text-info">Description:</label><br>
                 <input class="form-control" type="text" name="description"><br><br>
                 <label class="form-text-info">Image:</label><br>
-                <input class="form-control" type="file" name="file"><br>
+                <input class="form-control" type="file" name="image"><br>
                 <br>
-                <input class="btn btn-success" type="submit" name="Add"><br><br>
+                <input class="btn btn-success" type="submit" name="submit"><br><br>
             </form>
         </div>
     </div>

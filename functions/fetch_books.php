@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-$sql = "SELECT id, title, author, description FROM books";
+$sql = "SELECT * FROM books";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
                     <!--<p font-style="italic">Uploaded by: username. <br>17:09pm</p>-->
                 </div>
                 <div class="image">
-                    <a href="book.php?id={$row['id']}"> <image class="book-image" src="images/book1.png"></image></a>
+                    <a href="book.php?id={$row['id']}"> <image class="book-image" src="images/books/{$row['image']}"></image></a>
                 </div>
             </div>
         </div>

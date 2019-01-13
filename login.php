@@ -20,7 +20,6 @@
 
         <div class="login form-group col-md-6">
             <form action="functions/login_user.php" method="POST">
-                <?php include('errors.php'); ?>
                 <label class="form-text-info">E-mail:</label><br>
                 <input class="form-control" type="email" name="email"><br><br>
                 <label class="form-text-info">Password:</label><br>
